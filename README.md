@@ -31,10 +31,10 @@ All communication is done via **HTTPS** for safe and secure transfer. 🔐
 
 ## 📥 Installation & Usage
 
-1. Download the latest release from [Releases](https://github.com/your_repo/releases).  
+1. Download the latest release from [Releases](https://github.com/Rusticaland-Updater/releases).  
 2. Place `Rusticaland_Updater.exe` into any folder.  
-3. Run the program – if Rust folder is not found, you will be asked to select it.  
-4. The updater will check your version, download required files, extract, and install automatically.  
+3. Run the program – you will be asked to select folder of your cracked rust
+4. The updater will check your version, download required files, extract, install automatically and clean up after himself.
 
 ---
 
