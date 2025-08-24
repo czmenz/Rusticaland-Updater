@@ -395,16 +395,25 @@ def main():
     manifest = download_manifest(temp_dir)
 
     current_version = get_current_version(rust_folder, manifest)
+    
+    # Kontrola neznámé verze - pokud current_version je None, nelze aktualizovat
+    if current_version is None:
+        print("")
+        log_error("You have to redownload the game. We cant identify what version is your rust")
+        print("")
+        shutil.rmtree(temp_dir)
+        input("Press Enter to exit...")
+        sys.exit(1)
+    
     current_index = 0
-    if current_version:
-        for i, v in enumerate(manifest["versions"]):
-            if v["version"] == current_version["version"]:
-                current_index = i
-                break
+    for i, v in enumerate(manifest["versions"]):
+        if v["version"] == current_version["version"]:
+            current_index = i
+            break
 
     latest_index = len(manifest["versions"]) - 1
 
-    current_str = f"{current_version['version']} ({current_version['name']})" if current_version else "Unknown"
+    current_str = f"{current_version['version']} ({current_version['name']})"
     latest_version = manifest["versions"][latest_index]
     latest_str = f"{latest_version['version']} ({latest_version['name']})" if latest_version else "Unknown"
 
