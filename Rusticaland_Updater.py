@@ -20,12 +20,12 @@ init(autoreset=True)
 SERVER_URL = "http://89.203.249.22:3232"
 CONFIG_FILE = "config.json"
 
-CURRENT_VERSION = "1.0.3"
+CURRENT_VERSION = "1.0.4"
 CURRENT_TYPE = "Alpha"
 
 
 
-ctypes.windll.kernel32.SetConsoleTitleW("Rusticaland Updater - Alpha 1.0.3")
+ctypes.windll.kernel32.SetConsoleTitleW("Rusticaland Updater - Alpha 1.0.4")
 
 try:
     r = requests.get(SERVER_URL + "/version.manifest", timeout=5)
