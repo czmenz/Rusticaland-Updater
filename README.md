@@ -22,7 +22,7 @@
 
 The updater connects only to official **Rusticaland update servers** for:  
 
-- 📑 **Manifest** – JSON file containing versions, files, and hashes.  
+- 📑 **Manifest** – JSON file containing all data about the versions.
 - 📦 **Update packages** – compressed archives with updated game files.  
 
 All communication is done via **HTTPS** for safe and secure transfer. 🔐  
@@ -45,14 +45,14 @@ All communication is done via **HTTPS** for safe and secure transfer. 🔐
 [*] Established connection with the server.
 [*] Downloaded update data
 
-[*] Current Version: 2593 (Hardcore Refresh V2)
-[*] New Version: 2594 (Hardcore Refresh V3)
+[*] Current Version: 2594.3 (Hardcore Refresh V3)
+[*] New Version: 2594.4 (Hardcore Refresh V4)
 
 [*] Do you wish to download and install the new version(s)? (Y/N) Y
-[*] Downloading Version: 2594...
+[*] Downloading Version: 2594.4...
 [*] Extracting update...
 [*] Applying update...
-[*] Version applied successfully
+[*] Version 2594.4 applied successfully
 [*] Cleanup completed
 [*] Successfully updated
 Press Enter to exit...
